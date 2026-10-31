@@ -1,0 +1,24 @@
+{
+ "version": "v1.0",
+ "date": "2026-10-31",
+ "game": "Dead or Alive 2: Hardcore (Japan) / SLPS-25026 / PS2 (DVD, ISO)",
+ "asset": "DOA2_Hardcore_PS2_KO_v1.0.xdelta",
+ "asset_size": 412313,
+ "asset_sha256": "4db3f63eaf49a1e9be05c567764f11a1108eec0fe19310117549911adf20e97f",
+ "xdelta_options": "xdelta3 -e -0 -S none -A (no compression, no secondary compression, no application header)",
+ "source_iso_size": 4698734592,
+ "source_iso_md5": "7817c13465d96b192f7b2938ab820a25",
+ "source_iso_sha1": "f16a6a7a566b33ebabe700e314dbfaa9e39e6052",
+ "source_iso_sha256": "230ccb4ef6ba06a2cc04e4840115ff1be160d7fff7409fde62a0acc929c4499a",
+ "output_iso_size": 4698734592,
+ "output_iso_md5": "d741f9f349dd8fadb032f5471519ab9d",
+ "output_iso_sha1": "dc1d919eaf70f8b0c9d6fca183bed593b2522367",
+ "output_iso_sha256": "5c7be36cf38189e70b0f8e538f47b3ef764b99e03271d8ed1faf6fd67abe665d",
+ "widescreen": {
+  "SLPS-25026_59C7F040.pnach": {
+   "for": "한글판 v1.0 (CRC 59C7F040)",
+   "size": 465,
+   "sha256": "73e4984c1fb02d58aee6ec82879c4821dcdb93f4de3c765955983c706b536721"
+  }
+ }
+}
