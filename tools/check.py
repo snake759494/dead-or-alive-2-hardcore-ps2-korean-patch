@@ -11,6 +11,8 @@ def load():
             l=l.rstrip('\n')
             if not l: continue
             a,t=l.split('\t',1);ko[int(a,16)]=t.replace('\n','\n')
+            # 기술표 렌더러는 2바이트씩 읽으므로 기술명 공백은 전각(0x8140)으로
+            if os.path.basename(f).startswith('ko_moves'): ko[int(a,16)]=ko[int(a,16)].replace(' ','　')
     return ko
 def targets():
     return [(o,rf,t) for o,rf,t in extract.out if not(moves.G0<=o<moves.G1) and o not in SKIP]

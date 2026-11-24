@@ -1,7 +1,7 @@
 """tgs 텍스처 묶음 읽기: 헤더 'tgs\0', +8 항목 수, +0x30 부터 항목(오프셋)…  GIF 블록을 직접 훑어 텍스처/CLUT 추출."""
-import struct
+import struct,os
 from PIL import Image
-ISO='../DOA2 - Hardcore (Japan) (En,Ja,Fr,De,Es,It).iso'
+ISO=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),'DOA2 - Hardcore (Japan) (En,Ja,Fr,De,Es,It).iso')
 ROMB=1575031*2048
 CHAR_PACKS=[0x7a5b000,0x7a66000,0x7a73000,0x7a81800,0x7a8a800,0x7a95800,0x7aa0000,0x7aa9800,0x7ab3000,0x7abd800,0x7ac8800,0x7ad7000,0x7ae0800,0x7aeb800]
 def blocks(d):

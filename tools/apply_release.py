@@ -1,5 +1,5 @@
 """릴리즈 xdelta 를 해시 검사 후 적용.
-사용: python tools/apply_release.py --xdelta xdelta3.exe --source "DOA2 - Hardcore (Japan) (En,Ja,Fr,De,Es,It).iso" --patch DOA2_Hardcore_PS2_KO_v1.0.xdelta --output "DOA2 - Hardcore (Japan) (Korean).iso"
+사용: python tools/apply_release.py --xdelta xdelta3.exe --source "DOA2 - Hardcore (Japan) (En,Ja,Fr,De,Es,It).iso" --patch DOA2_Hardcore_PS2_KO_v1.1.xdelta --output "DOA2 - Hardcore (Japan) (Korean).iso"
 """
 import argparse, hashlib, json, os, subprocess, sys
 

@@ -1,10 +1,10 @@
 # 데드 오어 얼라이브 2 하드코어 PS2 한글패치
 
-PS2 일본판 **DEAD OR ALIVE 2 HARDCORE (SLPS-25026)**용 비공식 한국어 패치입니다. 스토리 대사, 승리 대사, 커맨드 리스트(기술명·조건 설명·분류 제목), 캐릭터 프로필, 메모리 카드·사용자 파일·리플레이 안내, 서바이벌 결과 문구를 한국어로 바꿨습니다. PCSX2용 **16:9 와이드 패치**도 함께 배포합니다. 현재 배포판은 **v1.0 (2026-10-31)**입니다.
+PS2 일본판 **DEAD OR ALIVE 2 HARDCORE (SLPS-25026)**용 비공식 한국어 패치입니다. 스토리 대사, 승리 대사, 커맨드 리스트(기술명·조건 설명·분류 제목), 캐릭터 프로필, 메모리 카드·사용자 파일·리플레이 안내, 서바이벌 결과 문구를 한국어로 바꿨습니다. PCSX2용 **16:9 와이드 패치**도 함께 배포합니다. 현재 배포판은 **v1.1 (2026-11-24)**입니다.
 
 [패치 다운로드](https://github.com/snake759494/dead-or-alive-2-hardcore-ps2-korean-patch/releases/latest) · [기술 설명](docs/TECHNICAL.md) · [재빌드](docs/BUILD.md) · [변경 기록](CHANGELOG.md) · [권리 안내](RIGHTS.md)
 
-릴리즈 첨부 파일은 한글패치 **DOA2_Hardcore_PS2_KO_v1.0.xdelta**와 와이드 패치 **SLPS-25026_59C7F040.pnach**(한글판용)입니다. 저장소에는 제작 소스, 번역, 검증 자료만 공개합니다. 원본 디스크 이미지와 완성된 디스크 이미지, 추출한 게임 파일, 일본어 원문, 글꼴 파일, 외부 실행 파일은 포함하지 않습니다. GitHub가 자동으로 만드는 Source code ZIP/TAR는 저장소 소스를 압축한 것이며 게임 파일이 아닙니다.
+릴리즈 첨부 파일은 한글패치 **DOA2_Hardcore_PS2_KO_v1.1.xdelta**와 와이드 패치 **SLPS-25026_87CB5A5F.pnach**(한글판용)입니다. 저장소에는 제작 소스, 번역, 검증 자료만 공개합니다. 원본 디스크 이미지와 완성된 디스크 이미지, 추출한 게임 파일, 일본어 원문, 글꼴 파일, 외부 실행 파일은 포함하지 않습니다. GitHub가 자동으로 만드는 Source code ZIP/TAR는 저장소 소스를 압축한 것이며 게임 파일이 아닙니다.
 
 ## 게임 소개 및 대상 버전
 
@@ -22,11 +22,11 @@ PS2 일본판 **DEAD OR ALIVE 2 HARDCORE (SLPS-25026)**용 비공식 한국어 �
 | **원본 ISO MD5** | `7817c13465d96b192f7b2938ab820a25` |
 | 원본 ISO SHA-1 | `f16a6a7a566b33ebabe700e314dbfaa9e39e6052` |
 | 원본 ISO SHA-256 | `230ccb4ef6ba06a2cc04e4840115ff1be160d7fff7409fde62a0acc929c4499a` |
-| xdelta 파일 크기 | 412,313 바이트 |
-| xdelta SHA-256 | `4db3f63eaf49a1e9be05c567764f11a1108eec0fe19310117549911adf20e97f` |
+| xdelta 파일 크기 | 412,872 바이트 |
+| xdelta SHA-256 | `3761847976d881a07e47637e76af3c34d51650c6ebb0dbb44cefdf154003c466` |
 | 적용 결과 ISO 크기 | 4,698,734,592 바이트 (원본과 같음) |
-| 적용 결과 ISO SHA-1 | `dc1d919eaf70f8b0c9d6fca183bed593b2522367` |
-| 적용 결과 ISO SHA-256 | `5c7be36cf38189e70b0f8e538f47b3ef764b99e03271d8ed1faf6fd67abe665d` |
+| 적용 결과 ISO SHA-1 | `9fa638f57b2a8778d732afb9b7a863a682cf3193` |
+| 적용 결과 ISO SHA-256 | `547614777f1df6375e86932df2d912448c4624a10ff8a1b83316590197114a8c` |
 
 원본 게임 파일은 사용자가 직접 준비해야 합니다.
 
@@ -42,7 +42,7 @@ Get-FileHash -Algorithm MD5 -LiteralPath '.\DOA2 - Hardcore (Japan) (En,Ja,Fr,De
 
 ### xdelta UI 사용
 
-1. 릴리즈에서 `DOA2_Hardcore_PS2_KO_v1.0.xdelta`를 받습니다.
+1. 릴리즈에서 `DOA2_Hardcore_PS2_KO_v1.1.xdelta`를 받습니다.
 2. xdelta3 패치를 지원하는 도구에서 **Apply Patch** 기능을 엽니다.
 3. **Patch**에는 xdelta 파일을, **Source File**에는 해시가 일치하는 원본 `.iso`를 선택합니다.
 4. **Output File**에는 새 파일 이름을 지정합니다(예: `DOA2 - Hardcore (Japan) (Korean).iso`).
@@ -52,13 +52,13 @@ xdelta는 호환성을 위해 압축·2차 압축·파일 경로 헤더 없이 �
 ### 명령줄 사용
 
 ```powershell
-.\xdelta3.exe -d -s '.\DOA2 - Hardcore (Japan) (En,Ja,Fr,De,Es,It).iso' '.\DOA2_Hardcore_PS2_KO_v1.0.xdelta' '.\DOA2 - Hardcore (Japan) (Korean).iso'
+.\xdelta3.exe -d -s '.\DOA2 - Hardcore (Japan) (En,Ja,Fr,De,Es,It).iso' '.\DOA2_Hardcore_PS2_KO_v1.1.xdelta' '.\DOA2 - Hardcore (Japan) (Korean).iso'
 ```
 
 해시를 자동으로 검사하는 도구도 있습니다. Python 3과 xdelta3가 필요하며, 같은 이름의 출력 파일이 이미 있으면 덮어쓰지 않습니다.
 
 ```powershell
-python tools/apply_release.py --xdelta '.\xdelta3.exe' --source '.\DOA2 - Hardcore (Japan) (En,Ja,Fr,De,Es,It).iso' --patch '.\DOA2_Hardcore_PS2_KO_v1.0.xdelta' --output '.\DOA2 - Hardcore (Japan) (Korean).iso'
+python tools/apply_release.py --xdelta '.\xdelta3.exe' --source '.\DOA2 - Hardcore (Japan) (En,Ja,Fr,De,Es,It).iso' --patch '.\DOA2_Hardcore_PS2_KO_v1.1.xdelta' --output '.\DOA2 - Hardcore (Japan) (Korean).iso'
 ```
 
 ### PCSX2에서 실행
@@ -69,18 +69,18 @@ PCSX2에는 원본판(CRC `82C02240`) 전용 부팅 멈춤 수정이 내장되�
 
 ## 16:9 와이드 패치 (PCSX2)
 
-PCSX2 내장 패치 목록에는 원본 일본판용 16:9 패치(`SLPS-25026_82C02240.pnach`, 제작 No.47)가 있습니다. 하지만 한글패치는 실행파일을 고치기 때문에 게임 CRC가 `82C02240` → `59C7F040`으로 바뀌어 **내장 패치가 한글판에 자동으로 적용되지 않습니다.** 내장 패치가 바꾸는 주소 4곳은 한글판 실행파일에서도 원본 그대로이므로, 같은 내용을 한글판 CRC로 옮긴 pnach를 함께 배포합니다. 3D 화면의 가로 투영 비율을 0.75배로 바꿔 16:9 화면을 늘림 없이 채웁니다. 같은 파일에 인터레이스 제거 패치(제작 Immersion95)도 들어 있습니다.
+PCSX2 내장 패치 목록에는 원본 일본판용 16:9 패치(`SLPS-25026_82C02240.pnach`, 제작 No.47)가 있습니다. 하지만 한글패치는 실행파일을 고치기 때문에 게임 CRC가 `82C02240` → `87CB5A5F`으로 바뀌어 **내장 패치가 한글판에 자동으로 적용되지 않습니다.** 내장 패치가 바꾸는 주소 4곳은 한글판 실행파일에서도 원본 그대로이므로, 같은 내용을 한글판 CRC로 옮긴 pnach를 함께 배포합니다. 3D 화면의 가로 투영 비율을 0.75배로 바꿔 16:9 화면을 늘림 없이 채웁니다. 같은 파일에 인터레이스 제거 패치(제작 Immersion95)도 들어 있습니다.
 
 **한글패치 버전이 바뀌면 실행파일 CRC도 바뀔 수 있으므로, 와이드 패치는 항상 같은 릴리즈의 pnach를 쓰세요.**
 
 | 파일 | 대상 | 게임 CRC |
 | --- | --- | --- |
-| `SLPS-25026_59C7F040.pnach` (릴리즈 첨부) | 이 한글패치 v1.0을 적용한 게임 | `59C7F040` |
+| `SLPS-25026_87CB5A5F.pnach` (릴리즈 첨부) | 이 한글패치 v1.1을 적용한 게임 | `87CB5A5F` |
 | PCSX2 내장 `SLPS-25026_82C02240.pnach` | 원본 일본판 | `82C02240` |
 
 ### 설치 (PCSX2 v2.x)
 
-1. 릴리즈에서 `SLPS-25026_59C7F040.pnach`를 받습니다. 파일 이름을 바꾸지 마세요(PCSX2는 이름의 CRC로 게임을 찾습니다).
+1. 릴리즈에서 `SLPS-25026_87CB5A5F.pnach`를 받습니다. 파일 이름을 바꾸지 마세요(PCSX2는 이름의 CRC로 게임을 찾습니다).
 2. PCSX2 `patches` 폴더에 넣습니다.
    - 설치판: `문서\PCSX2\patches\`
    - 휴대용판: `pcsx2-qt.exe`가 있는 폴더의 `patches\`
@@ -93,7 +93,7 @@ PCSX2 내장 패치 목록에는 원본 일본판용 16:9 패치(`SLPS-25026_82C
 ### 끄기·문제 해결
 
 - 끄려면 4번의 체크를 해제합니다.
-- 패치 탭에 항목이 보이지 않으면 파일 이름의 CRC와 게임의 CRC가 다른 것입니다. 게임을 실행한 뒤 **도구 → 로그 표시**에서 `CRC:` 줄을 확인하세요. 한글판 v1.0이면 `59C7F040`, 원본이면 `82C02240`이 나와야 합니다.
+- 패치 탭에 항목이 보이지 않으면 파일 이름의 CRC와 게임의 CRC가 다른 것입니다. 게임을 실행한 뒤 **도구 → 로그 표시**에서 `CRC:` 줄을 확인하세요. 한글판 v1.1이면 `87CB5A5F`, 원본이면 `82C02240`이 나와야 합니다.
 - 원본 일본판에는 이 pnach가 필요 없습니다. 같은 패치가 PCSX2에 이미 들어 있으니 패치 탭에서 켜기만 하면 됩니다.
 - 화면이 여전히 4:3이면 **설정 → 그래픽 → 화면비**를 16:9로 바꾸세요.
 - PCSX2 1.6 이하에서는 `cheats_ws` 폴더에 넣고 **와이드스크린 패치 사용**을 켜세요. 이 경우 `[Widescreen 16:9]` 줄을 지워야 할 수 있습니다.
